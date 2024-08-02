@@ -1,5 +1,4 @@
 import React from 'react'
-import ResponsiveAddCoin from '../Material/ResponsiveAddCoin'
 import AddCoin from './AddCoin'
 import TableGrid from './TableGrid'
 

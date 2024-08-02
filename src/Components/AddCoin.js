@@ -1,10 +1,12 @@
 import React from 'react'
+import LiquidityCal from '../Functions/LiquidityCal';
 
 const AddCoin = () => {
 
     const handleAddClick =() =>
     {
-        alert("Added")
+      let test= LiquidityCal(2,10,"l",49);
+     alert(test)
     }
 
 
