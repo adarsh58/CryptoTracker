@@ -1,12 +1,13 @@
 import React from 'react'
 import LiquidityCal from '../Functions/LiquidityCal';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 const AddCoin = () => {
 
     const handleAddClick =() =>
     {
-      let test= LiquidityCal(2,10,"l",49);
-     alert(test)
+     let test= LiquidityCal(2,10,"l",49);
     }
 
 
@@ -49,8 +50,10 @@ const AddCoin = () => {
       </div>
     </div>
   </fieldset>
-  <button type="button" className="btn btn-primary" onClick={handleAddClick}>Add</button>
-  <button type="button" className="btn btn-primary mx-3">Reset</button>
+  <Stack spacing={2} direction="row">
+      <Button variant="outlined" onClick={handleAddClick}>Add</Button>
+      <Button variant="outlined" >Reset</Button>
+    </Stack>
 </form>
     </div>
   )
